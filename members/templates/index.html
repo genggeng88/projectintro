@@ -1,0 +1,31 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<div class="text-center">
+    <h1>Software Engineering class SFSU<br>Summer 2022<br>Section 01<br>Team 03</h1>
+</div>
+
+<div class="d-grid ms-5 gap-3 justify-content-center">
+    <div class="p-2 bg-light border">
+        <a class="btn" href="{% url 'soujanya' %}">Team Member 1 {{member1}}</a>
+    </div>
+    <div class="p-2 bg-light border">
+        <a class="btn" href="{% url 'andy' %}" role="button" >Team Member 2 {{member2}}</a>
+    </div>
+    <div class="p-2 bg-light border">
+        <a class="btn" href="{% url 'margaret' %}">Team Member 3 {{member3}}</a>
+    </div>
+    <div class="p-2 bg-light border">
+        <a class="btn" href="{% url 'martin' %}">Team Member 4 {{member4}}</a>
+    </div>
+    <div class="p-2 bg-light border">
+        <a class="btn" href="{% url 'qin' %}">Team Member 5 {{member5}}</a>
+    </div>
+    <div class="p-2 bg-light border">
+        <a class="btn" href="{% url 'william' %}">Team Member 6 {{member6}}</a>
+    </div>
+    <div class="p-2 bg-light border">
+        <a class="btn" href="{% url 'victor' %}">Team Member 7 {{member7}}</a>
+    </div>
+</div>        
+{% endblock %}
